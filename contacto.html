@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>Formulario</title>
+</head>
+
+<body>
+
+  <section class="descuentos">Descuentos en todos los productos</section>
+  <header class="header">
+    <div class="logo">
+      <img src="/images/Logo (1).png" alt="logo-formulario">
+      <h2>Nombre Tienda</h2>
+    </div>
+    <nav>
+      <ul>
+        <li>
+          <a href="">Contacto</a>
+        </li>
+        <li>
+          <a href="">Registrarme</a>
+        </li>
+        <li>
+          <a href="">Ingresar</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+
+
+  <div class="form">
+
+    <form class="contacto" action="contacto.html" method="post">
+      <div class="text">
+        <h3>Añadí tu super!</h3>
+        <p>Agregá tu personaje favorito completando las opciones.</p>
+      </div>
+      <div class="box-principal">
+        <section class="box primary">
+          <label for="nombre">Nombre</label>
+          <input class="content" type="text" name="nombre" id="nombre" required>
+
+          <label for="fecha">Fecha</label>
+          <input class="content" type="date" name="fecha" id="fecha" value="2023-03-19" min="01-02-2023">
+          <textarea class="content" name="descripcion" id="descripcion" placeholder="description"></textarea>
+        </section>
+
+        <section class="box secondary">
+          <label for="gender">Especie</label>
+          <select class="content" name="gender" id="gender">
+            <optgroup label="man or woman ">
+              <option value="men">Men</option>
+              <option value="woman">Women</option>
+            </optgroup>
+
+            <optgroup label="species">
+              <option value="bear">Oso</option>
+              <option value="tiger">tiger</option>
+              <option value="anunaki">Anunaki</option>
+              <option value="cyborg">Cyborg</option>
+            </optgroup>
+          </select>
+          
+            <label for="images">Agregar foto </label>
+            <input class="img" type="file" name="images" id="images" accept=".jpg, .png">
+
+            <label for="Poder">Poderes</label>
+
+            <label for="volar">volar
+              <input class="poder" type="checkbox" name="poder" id="volar" value="volar">
+            </label>
+
+            <label for="fuerza">Super Fuerza
+              <input class="poder" type="checkbox" name="poder" id="fuerza" value="fuerza">
+            </label>
+
+            <label for="veloz">Veloz
+              <input class="poder" type="checkbox" name="poder" id="veloz" value="veloz">
+            </label>
+
+            <label for="millonario">Millonario
+              <input class="poder" type="checkbox" name="poder" id="millonario" value="millonario">
+            </label>
+
+            <hr>
+
+            <label class="clase" for="clase"> Tipo de personaje </label>
+            <label for="heroe">Heroe
+              <input type="checkbox" name="clase" id="heroe" value="Heroe">
+            </label>
+
+            <label for="villano"> Villano
+              <input type="checkbox" name="clase" id="villano" value="villano">
+            </label>
+
+            <input class="submit" type="submit" value="enviar">
+        
+      </div>
+    </form>
+  </div>
+
+</body>
+
+</html>

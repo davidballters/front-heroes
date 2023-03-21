@@ -8,9 +8,21 @@
 
 .descuentos {
   padding-left: 20px;
-  background-color: rgb(209, 137, 28);
+  background-color: rgb(28, 209, 176);
   font-size: 20px;
   color: blue;
+}
+
+.cruz {
+  position: fixed;
+  bottom: 15px;
+  right: 25px;
+  width: 30px;
+  height: 30px;
+  background-color: #00669F;
+  border-radius: 50px;
+  padding: 10px;
+  z-index: 10;
 }
 
 .header {
@@ -164,3 +176,83 @@ footer img {
     height: 20px;
   }
 }
+
+/* //seccion de formulario */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 15px 20px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+  padding-right: 30px;
+  height: 60px;
+  list-style: none;
+  background-color: rgb(0, 29, 45);
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.contacto {
+  padding: 60px;
+  border-radius: 40px;
+  background-color: #00669F;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.text h3 {
+  font-size: 35px;
+}
+
+.text p {
+  font-size: 20px;
+}
+
+.box-principal {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 300px;
+  height: auto;
+}
+
+.content {
+  padding: 18px;
+  border-radius: 10px;
+}
+
+textarea {
+  resize: none;
+}
+
