@@ -1,0 +1,303 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto" sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;500;600;700&family=Poppins:ital,wght@0,400;0,700;1,300;1,700&family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+.descuentos {
+  padding-left: 20px;
+  background-color: rgb(28, 209, 176);
+  font-size: 20px;
+  color: blue;
+}
+
+.cruz {
+  position: fixed;
+  bottom: 15px;
+  right: 25px;
+  width: 30px;
+  height: 30px;
+  background-color: #00669F;
+  border-radius: 50px;
+  padding: 10px;
+  z-index: 10;
+}
+
+.cruz:hover {
+  background-color: #1CD1B0;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  margin-bottom: 100px;
+  width: 100%;
+  background-color: rgb(0, 102, 159);
+  z-index: 10;
+
+  h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 40px;
+  padding-left: 20px;
+  color: white;
+  }
+
+  //seccion formulario
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 20px;
+  
+    a {
+      text-decoration: none;
+    }
+  }
+  
+  h2 {
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+    padding-right: 30px;
+    height: 60px;
+    list-style: none;
+    background-color: rgb(0, 29, 45);
+
+    ul li a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+
+  .card {
+  position: relative;
+  width: 24%;
+  height: 560px;
+  border: solid 2px black;
+  border-radius: 15px;
+  text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: rgb(243, 243, 243);
+
+    .icon {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 20px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+  .batman {
+    background-image: url(/images/baticueba.png);
+  }
+  
+  .diana {
+    background-image: url(/images/amazonas.png);
+  }
+  
+  .harley {
+    background-image: url(/images/fondo-jarley.png);
+  }
+  
+  .super {
+    background-image: url(/images/mundo.png);
+  }
+
+  .circle {
+    width: 128px;
+    height: 128px;
+    margin-top: 120px;
+    margin-bottom: 20px;
+  }
+  
+  .card .title {
+    font-size: 20px;
+  }
+  
+  .card .description {
+    padding: 15px;
+    font-weight: 200;
+    line-height: 1.2;
+    margin-bottom: 25px;
+  }
+  
+  .card a {
+    padding: 10px 10px;
+    background-color: rgb(0, 102, 159);
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  width: 100%;
+  height: auto;
+  background-color: rgb(0, 102, 159);
+}
+
+footer h3 {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+
+  img {
+    width: 110px;
+    height: 35px;
+  }
+}
+
+
+
+@media screen and (max-width:768px) {
+
+  .cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    .card {
+      width: 39%;
+    }
+  }
+
+  footer {
+    justify-content: space-evenly;
+  }
+}
+
+@media screen and (max-width:480px) {
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    .card {
+      width: 90%;
+    }
+    
+    .circle {
+      margin-top: 160px;
+    }
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 15px;
+
+      img {
+      width: 90px;
+      height: 20px;
+    }
+  }
+}
+
+/* //seccion de formulario */
+
+.form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  text-align: center;
+  color: white;
+}
+
+.contacto {
+  padding: 60px;
+  border-radius: 40px;
+  background-color: #00669F;
+
+  .text {
+    text-align: center;
+    margin-bottom: 50px;
+
+    h3 {
+      padding-top: 20px;
+      margin-bottom: 20px;
+      font-size: 35px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+  }
+
+  .box-principal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+    text-align: start;
+    gap: 30px;
+  
+    .box {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      width: 300px;
+      height: auto;
+  
+      .content {
+        padding: 18px;
+        border-radius: 10px;
+      }
+    }
+  }
+  
+  .submit {
+    padding: 20px 115px;
+    bottom: 21px;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    border-radius: 15px;
+    background-color: #1CD1B0;
+  }
+}
+
+
+@media screen and (max-width:480px){
+
+  .contacto {
+    padding: 0;
+    border-radius: 0;
+
+    .box-principal {
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+    }
+
+    .submit {
+      padding: 10px 40px;
+      margin-bottom: 40px;
+    }
+
+    .text p {
+      font-size: 16px;
+    }
+  }
+} 
